@@ -3,3 +3,55 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #f9fbfe;
+    font-family: "Roboto", sans-serif;
+}
+
+.todo-bg-container {
+    height: 100vh;
+}
+
+.todo-heading {
+    color: #4686e0;
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.todo-user-input {
+    width: 100%;
+    border: 1px solid #94bcf1;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    color: #3e4c59;
+}
+
+.add-todo-button {
+    color: #4686e0;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #94bcf1;
+    border-radius: 5px;
+}
+
+.todo-list-heading {
+    color: #323f4b;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.todo-list-container {
+    padding-left: 0px;
+}
+
+.save-todo-button {
+    color: white;
+    background-color: #1a7147;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
