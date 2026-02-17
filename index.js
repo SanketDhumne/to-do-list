@@ -23,10 +23,7 @@ function onStatusUpdate(chkId, titleId, todoId) {
         titleEl.style.textDecoration = "none";
     }
 
-    let todoIndex = todoList.findIndex(function (each) {
-        let eachTodoId = "todo" + each.id;
-        return eachTodoId === todoId;
-    });
+    let todoIndex = todoList.findIndex(todo => todo.id == todoId.slice(4));
 
     todoList[todoIndex].isChecked = checkEl.checked;
 }
@@ -81,26 +78,16 @@ function onDeleteTodo(todoId) {
     let todoEl = document.getElementById(todoId);
     rootEl.removeChild(todoEl);
 
-    let todoIndex = todoList.findIndex(function (each) {
-        let eachTodoId = "todo" + each.id;
-        if (eachTodoId === todoId) {
-            return true;
-        } else {
-            return false;
-        }
-    });
+    let todoIndex = todoList.findIndex(todo => todo.id == todoId.slice(4));
 
     todoList.splice(todoIndex, 1);
 }
 
 for (each of todoList) {
-
     createAndAppendTodo(each);
-
 }
 
 function onAddTodo() {
-
     let userVal = userInEl.value;
 
     if (userVal === "") {
