@@ -30,7 +30,7 @@ This project demonstrates JavaScript DOM manipulation, event handling, and local
 ---
 
 ## Project Structure
-
+```
 to-do-list/
 │
 ├── index.html
@@ -41,7 +41,7 @@ to-do-list/
     └── images/
         └── favicon.ico
 
-
+```
 ---
 
 ## How It Works
